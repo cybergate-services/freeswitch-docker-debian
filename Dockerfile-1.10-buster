@@ -17,7 +17,7 @@ apt-get autoremove --yes && \
 rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 #debug tools
-#RUN apt-get install -y --force-yes vim net-tools less gnupg
+RUN apt-get install -y --force-yes vim net-tools less gnupg iproute2
 
 #run config changes
 COPY configs/updatefs.sh /
